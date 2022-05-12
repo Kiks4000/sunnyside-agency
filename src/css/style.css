@@ -13,8 +13,90 @@ html {
   font-size: 62.5%;
 }
 
+a,
+a:visited,
+a:link,
+li {
+  text-decoration: none;
+}
+
 /* ----- Font ----- > */
 /* ----- Variables & Mixins ----- > */
 /* < ----- primary Color ----- > */
 /* < ----- Neutral Color ----- > */
-/* ------------------- *//*# sourceMappingURL=style.css.map */
+/* ------------------- */
+header {
+  height: 800px;
+  background: url(../../images/photos/image-header.jpg) center/cover;
+}
+header nav {
+  color: hsl(0deg, 0%, 100%);
+  padding: 3rem;
+}
+header nav .navigation {
+  color: hsl(0deg, 0%, 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .navigation__logo {
+  left: 0px;
+  top: 0px;
+}
+header nav .navigation__menu {
+  justify-items: flex-start;
+  font-family: "Barlow";
+  font-size: 1rem;
+}
+header nav .navigation__btn .contact {
+  text-align: center;
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 8rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Fraunces" Soft;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+}
+header .arrow-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 107.48px;
+}/*# sourceMappingURL=style.css.map */

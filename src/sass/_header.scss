@@ -1,0 +1,55 @@
+header {
+	height: 800px;
+	background: url(../../images/photos/image-header.jpg) center/cover;
+	nav {
+		color: $White;
+		padding: 3rem;
+		.navigation {
+			color: $White;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			&__logo {
+				// color: $White;
+				left: 0px;
+				top: 0px;
+			}
+			&__menu {
+				justify-items: flex-start;
+				// color: $White;
+				font-family: "Barlow";
+				font-size: 1rem;
+			}
+			&__btn {
+				.contact {
+					text-align: center;
+					color: $Very-dark-desaturated-blue;
+					font-family: "Barlow";
+					font-size: 1.5rem;
+					padding: 10px 20px;
+					border-radius: 8rem;
+					background-color: $White;
+				}
+			}
+		}
+	}
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Fraunces" Soft;
+		font-size: 6rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $White;
+	}
+	.arrow-down {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 107.48px;
+	}
+}
