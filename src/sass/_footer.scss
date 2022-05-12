@@ -1,35 +1,8 @@
 footer{
     height: 35rem;
     background: $newfooter;
+    padding: 4.8rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 7.2rem;
-    padding-top: 7.2rem;
-    .footer__container{
-        height: 20.6rem;
-        width: 29.7rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .footer__logo{
-            height: 3.3rem;
-            margin-bottom: 6.5rem;
-        }
-        .footer__list-nav{
-            display: flex;
-            justify-content: space-between;
-            font-family: 'barlow';
-            font-size: 1.8rem;
-            margin-bottom: 8.8rem;
-        }
-        .footer__list-social{
-            display: flex;
-            justify-self: center;
-            gap: 3rem;
-            .footer__list-social-logo{
-                width: 2rem;
-            }
-        }
-
-    }
 }
