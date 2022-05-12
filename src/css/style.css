@@ -17,4 +17,55 @@ html {
 /* ----- Variables & Mixins ----- > */
 /* < ----- primary Color ----- > */
 /* < ----- Neutral Color ----- > */
-/* ------------------- *//*# sourceMappingURL=style.css.map */
+/* ------------------- */
+footer {
+  height: 35rem;
+  background: hsl(168deg, 44%, 70%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 7.2rem;
+  padding-top: 7.2rem;
+}
+footer .footer__container {
+  height: 20.6rem;
+  width: 29.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer__container .footer__logo {
+  height: 3.3rem;
+  margin-bottom: 6.5rem;
+}
+footer .footer__container .footer__list-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "barlow";
+  font-size: 1.8rem;
+  margin-bottom: 8.8rem;
+}
+footer .footer__container .footer__list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  gap: 3rem;
+}
+footer .footer__container .footer__list-social .footer__list-social-logo {
+  width: 2rem;
+}/*# sourceMappingURL=style.css.map */
