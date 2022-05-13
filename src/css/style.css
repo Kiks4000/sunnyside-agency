@@ -233,12 +233,69 @@ header .arrow-down {
 }
 .presentation .presentation__section-three .presentation__section-three--cherry {
   height: 60rem;
-  background: url(../../images/photos/image-graphic-design.jpg);
+  background: url(../../images/photos/image-graphic-design.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+.presentation .presentation__section-three .presentation__section-three--cherry .presentation__section-three--cherry--title {
+  font-family: "Fraunces";
+  font-size: 4rem;
+  color: hsl(212deg, 27%, 19%);
+}
+.presentation .presentation__section-three .presentation__section-three--cherry .presentation__section-three--cherry--text {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 35rem;
+  line-height: 2.5rem;
+  color: hsl(212deg, 27%, 19%);
 }
 .presentation .presentation__section-three .presentation__section-three--orange {
   height: 60rem;
-  background: url(../../images/photos/image-photography.jpg);
+  background: url(../../images/photos/image-photography.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
 }
+.presentation .presentation__section-three .presentation__section-three--orange .presentation__section-three--orange--title {
+  font-family: "Fraunces";
+  font-size: 4rem;
+  color: hsl(212deg, 27%, 19%);
+}
+.presentation .presentation__section-three .presentation__section-three--orange .presentation__section-three--orange--text {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 35rem;
+  line-height: 2.5rem;
+  color: hsl(212deg, 27%, 19%);
+}
+
 .testimonials {
   height: 78rem;
   gap: 10rem;
@@ -332,14 +389,21 @@ header .arrow-down {
 }
 
 .gallery {
-  height: 44rem;
+  height: 45rem;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.gallery__image-milk, .gallery__image-orange, .gallery__image-cone, .gallery__image-sugar {
-  height: 100%;
-  width: 100%;
-  background: center/cover;
+.gallery__image-milk {
+  background: url(../../images/photos/image-gallery-milkbottles.jpg) center/cover;
+}
+.gallery__image-orange {
+  background: url(../../images/photos/image-gallery-orange.jpg) center/cover;
+}
+.gallery__image-cone {
+  background: url(../../images/photos/image-gallery-cone.jpg) center/cover;
+}
+.gallery__image-sugar {
+  background: url(../../images/photos/image-gallery-sugarcubes.jpg) center/cover;
 }
 
 footer {
