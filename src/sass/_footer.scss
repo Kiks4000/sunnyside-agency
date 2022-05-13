@@ -17,17 +17,32 @@ footer{
         }
         .footer__list-nav{
             display: flex;
-            justify-content: space-between;
             font-family: 'barlow';
             font-size: 1.8rem;
             margin-bottom: 8.8rem;
+            margin-top: -2rem;
+            gap: 5.5rem;
+            .footer__list-nav-item{
+                color: $dark-moderate;
+                transition: ease-in 0.3s;
+                &:hover{
+                    color: $White;
+                }
+            }
         }
         .footer__list-social{
             display: flex;
             justify-self: center;
-            gap: 3rem;
+            gap: 4rem;
             .footer__list-social-logo{
-                width: 2rem;
+                transition: ease-in 0.3s;
+                color: $dark-moderate;
+                &:hover{
+                    color: $White;
+                }
+                .fa-brands{
+                    transform:scale(2.5);
+                }
             }
         }
 

@@ -1,0 +1,64 @@
+.presentation{
+    .presentation__section-one{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .presentation__section-one--text{
+            padding: 17rem;
+            height: 60rem;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 3.2rem;
+            .presentation__title{
+                font-family: 'Fraunces';
+                font-weight: 900;
+                font-size: 5rem;
+                letter-spacing: -0.285714px;
+            }
+            .presentation__text{
+                font-family: 'Barlow';
+                font-size: 1.6rem;
+                font-weight: 600;
+                line-height: 3rem;
+                color: #808397;
+
+            }
+            .presentation__link{
+                color: black;
+                font-family: 'Fraunces';
+                font-weight: 900;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                position: relative;
+                &::after{
+                    position : absolute;
+                    width : 120px;
+                    height : 2rem;
+                    background-color: $yellow;
+                    border: 1px transparent;
+                    border-radius: 8px;
+                    bottom: -10px;
+                    left: 0px;
+                    content: "";
+                    opacity: 0.15;
+                }
+            }
+        }
+        .presentation__section-one--image{
+            height: 60rem;
+            background: url(../../images/photos/image-transform.jpg) center/cover;
+        }
+    }
+    .presentation__section-two{
+        @extend .presentation__section-one;
+        .presentation__section-two--text{
+            @extend .presentation__section-one--text;
+        }
+        .presentation__section-two--image{
+            height: 60rem;
+            background: url(../../images/photos/image-stand-out.jpg) center/cover;
+        }
+    }
+}
