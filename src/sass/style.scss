@@ -11,18 +11,16 @@ html {
 	font-size: 62.5%;
 }
 
-a,
-a:visited,
-a:link,
-li {
-	text-decoration: none;
+body{
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 a,
 a:visited,
 a:link,
 li {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /* ----- Font ----- > */
