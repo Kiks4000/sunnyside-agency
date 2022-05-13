@@ -1,0 +1,58 @@
+.testimonials {
+	height: 78rem;
+	gap: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		letter-spacing: 0.5rem;
+		font-size: 2rem;
+		color: $Dark-grayish-blue;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10rem;
+		&--peoples {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 1rem;
+			width: 34rem;
+			height: 35rem;
+			&--picture {
+				width: 7.2rem;
+				height: 7.2rem;
+				border-radius: 50%;
+			}
+			&--view {
+				color: $Very-dark-grayish-blue;
+				font-family: "Barlow";
+				line-height: 3rem;
+				text-align: center;
+				font-size: 1.7rem;
+				font-weight: 600;
+				align-self: flex-end;
+			}
+			&--name {
+				font-family: "Fraunces";
+				font-size: 1.8rem;
+				justify-self: flex-start;
+			}
+			&--job {
+				font-family: "Barlow";
+				font-size: 1.4rem;
+				color: $Dark-grayish-blue;
+			}
+		}
+	}
+}

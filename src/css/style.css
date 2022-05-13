@@ -129,4 +129,107 @@ header .arrow-down {
           align-items: center;
   width: 30px;
   height: 107.48px;
+}
+
+.testimonials {
+  height: 78rem;
+  gap: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonials__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  color: hsl(232deg, 10%, 55%);
+}
+.testimonials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10rem;
+}
+.testimonials__list--peoples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  width: 34rem;
+  height: 35rem;
+}
+.testimonials__list--peoples--picture {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+}
+.testimonials__list--peoples--view {
+  color: hsl(213deg, 9%, 39%);
+  font-family: "Barlow";
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.testimonials__list--peoples--name {
+  font-family: "Fraunces";
+  font-size: 1.8rem;
+  justify-self: flex-start;
+}
+.testimonials__list--peoples--job {
+  font-family: "Barlow";
+  font-size: 1.4rem;
+  color: hsl(232deg, 10%, 55%);
+}
+
+.gallery {
+  height: 44rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.gallery__image-milk, .gallery__image-orange, .gallery__image-cone, .gallery__image-sugar {
+  height: 100%;
+  width: 100%;
+  background: center/cover;
 }/*# sourceMappingURL=style.css.map */
