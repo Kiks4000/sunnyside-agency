@@ -112,9 +112,9 @@ header nav .navigation__btn .contact:hover {
   background: hsla(0deg, 0%, 100%, 0.25);
 }
 header h1 {
-  font-family: "Fraunces" Soft;
+  font-family: "Fraunces";
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: hsl(0deg, 0%, 100%);
