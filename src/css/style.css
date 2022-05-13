@@ -85,6 +85,8 @@ header nav .navigation {
       -ms-flex-align: center;
           align-items: center;
   gap: 7rem;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
 }
 header nav .navigation__menu {
   justify-items: flex-start;
@@ -107,10 +109,9 @@ header nav .navigation__btn .contact {
   border-radius: 8rem;
   background-color: hsl(0deg, 0%, 100%);
 }
-header nav .navigation__btn:hover {
-  opacity: 0.4;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+header nav .navigation__btn .contact:hover {
+  color: hsl(0deg, 0%, 100%);
+  background: hsla(0deg, 0%, 100%, 0.25);
 }
 header h1 {
   font-family: "Fraunces" Soft;
@@ -138,11 +139,11 @@ header .arrow-down {
   height: 107.48px;
 }
 
-.presentation .presentation__section-one, .presentation .presentation__section-two {
+.presentation .presentation__section-one, .presentation .presentation__section-three, .presentation .presentation__section-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.presentation .presentation__section-one .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-two--text {
+.presentation .presentation__section-one .presentation__section-one--text, .presentation .presentation__section-three .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-two--text {
   padding: 17rem;
   height: 60rem;
   display: -webkit-box;
@@ -157,20 +158,20 @@ header .arrow-down {
           align-items: baseline;
   gap: 3.2rem;
 }
-.presentation .presentation__section-one .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-two--text .presentation__title {
+.presentation .presentation__section-one .presentation__section-one--text .presentation__title, .presentation .presentation__section-three .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-two--text .presentation__title {
   font-family: "Fraunces";
   font-weight: 900;
   font-size: 5rem;
   letter-spacing: -0.285714px;
 }
-.presentation .presentation__section-one .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-two--text .presentation__text {
+.presentation .presentation__section-one .presentation__section-one--text .presentation__text, .presentation .presentation__section-three .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-two--text .presentation__text {
   font-family: "Barlow";
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 3rem;
   color: #808397;
 }
-.presentation .presentation__section-one .presentation__section-one--text .presentation__link, .presentation .presentation__section-two .presentation__section-one--text .presentation__link, .presentation .presentation__section-two .presentation__section-two--text .presentation__link {
+.presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red {
   color: black;
   font-family: "Fraunces";
   font-weight: 900;
@@ -179,28 +180,65 @@ header .arrow-down {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   position: relative;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
-.presentation .presentation__section-one .presentation__section-one--text .presentation__link::after, .presentation .presentation__section-two .presentation__section-one--text .presentation__link::after, .presentation .presentation__section-two .presentation__section-two--text .presentation__link::after {
+.presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow span, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow span, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow span, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow span, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red span {
+  position: relative;
+}
+.presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow::before, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow::before, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow::before, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow::before, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red::before {
   position: absolute;
-  width: 120px;
-  height: 2rem;
+  width: 110%;
+  height: 1rem;
   background-color: hsl(51deg, 100%, 49%);
   border: 1px transparent;
-  border-radius: 8px;
-  bottom: -10px;
+  border-radius: 28px;
+  bottom: 0px;
   left: 0px;
   content: "";
-  opacity: 0.15;
+  opacity: 0.25;
+  -webkit-transform: translateX(-5.5%);
+          transform: translateX(-5.5%);
 }
-.presentation .presentation__section-one .presentation__section-one--image, .presentation .presentation__section-two .presentation__section-one--image {
+.presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow:hover::before, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow:hover::before, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow:hover::before, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow:hover::before, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red:hover::before {
+  opacity: 1;
+}
+.presentation .presentation__section-one .presentation__section-one--image, .presentation .presentation__section-three .presentation__section-one--image, .presentation .presentation__section-two .presentation__section-one--image {
   height: 60rem;
   background: url(../../images/photos/image-transform.jpg) center/cover;
+}
+.presentation .presentation__section-two .presentation__section-two--text .presentation__link--red span {
+  position: relative;
+}
+.presentation .presentation__section-two .presentation__section-two--text .presentation__link--red::before {
+  position: absolute;
+  width: 110%;
+  height: 1rem;
+  background-color: hsl(7deg, 99%, 70%);
+  border: 1px transparent;
+  border-radius: 28px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0.25;
+  -webkit-transform: translateX(-5.5%);
+          transform: translateX(-5.5%);
+}
+.presentation .presentation__section-two .presentation__section-two--text .presentation__link--red:hover::before {
+  opacity: 1;
 }
 .presentation .presentation__section-two .presentation__section-two--image {
   height: 60rem;
   background: url(../../images/photos/image-stand-out.jpg) center/cover;
 }
-
+.presentation .presentation__section-three .presentation__section-three--cherry {
+  height: 60rem;
+  background: url(../../images/photos/image-graphic-design.jpg);
+}
+.presentation .presentation__section-three .presentation__section-three--orange {
+  height: 60rem;
+  background: url(../../images/photos/image-photography.jpg);
+}
 .testimonials {
   height: 78rem;
   gap: 10rem;

@@ -24,6 +24,7 @@ header {
 			justify-content: flex-end;
 			align-items: center;
 			gap: 7rem;
+			transition: ease-in-out 0.4s;
 			&__menu {
 				.about,
 				.services,
@@ -45,12 +46,11 @@ header {
 					padding: 2rem 3rem;
 					border-radius: 8rem;
 					background-color: $White;
+					&:hover {
+						color: $White;
+						background: hsla(0, 0%, 100%, 0.25);
+					}
 				}
-			}
-
-			&__btn:hover {
-				opacity: 0.4;
-				transition: opacity 0.4s ease-in-out;
 			}
 		}
 	}
