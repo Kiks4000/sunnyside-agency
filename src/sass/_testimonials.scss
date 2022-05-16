@@ -1,4 +1,8 @@
 .testimonials {
+	@media only screen and (max-width: 1225px) {
+		height: 140rem;
+		gap: 0rem;
+	}
 	height: 78rem;
 	gap: 10rem;
 	display: flex;
@@ -6,6 +10,10 @@
 	justify-content: center;
 	align-items: center;
 	&__title {
+		@media only screen and (max-width: 1225px) {
+			font-size: 1.6rem;
+			margin-bottom: 6.8rem;
+		}
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -16,12 +24,22 @@
 	}
 
 	&__list {
+		@media only screen and (max-width: 1225px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 1225px;
+			gap: 6rem;
+		}
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		gap: 10rem;
 		&--peoples {
+			@media only screen and (max-width: 1225px) {
+				margin-bottom: 0rem;
+			}
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
@@ -36,6 +54,11 @@
 				margin-bottom: 5rem;
 			}
 			&--view {
+				@media only screen and (max-width: 1225px) {
+					font-size: 1.8rem;
+					line-height: 3.6rem;
+					margin-bottom: 3.2rem;
+				}
 				color: $Very-dark-grayish-blue;
 				font-family: "Barlow";
 				line-height: 3rem;
@@ -52,6 +75,11 @@
 				margin-bottom: 1rem;
 			}
 			&--job {
+				@media only screen and (max-width: 1225px) {
+					font-size: 1.6rem;
+					line-height: 3.6rem;
+					margin-bottom: 0rem;
+				}
 				font-family: "Barlow";
 				font-size: 1.4rem;
 				color: $Dark-grayish-blue;

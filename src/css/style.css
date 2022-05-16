@@ -58,15 +58,38 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .hamburger-menu {
+  display: none;
+}
+@media only screen and (max-width: 1225px) {
+  header nav .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -2rem;
+    height: 2.4rem;
+  }
 }
 header nav .logo {
   height: 3rem;
   width: 15rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+@media only screen and (max-width: 1225px) {
+  header nav .logo {
+    margin: -2rem;
+  }
 }
 header nav .navigation {
   display: -webkit-box;
@@ -85,6 +108,11 @@ header nav .navigation {
   gap: 7rem;
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
+}
+@media only screen and (max-width: 1225px) {
+  header nav .navigation {
+    display: none;
+  }
 }
 header nav .navigation__menu {
   justify-items: flex-start;
@@ -112,12 +140,20 @@ header nav .navigation__btn .contact:hover {
   background: hsla(0deg, 0%, 100%, 0.25);
 }
 header h1 {
-  font-family: "Fraunces" Soft;
+  font-family: "Fraunces", serif;
   font-size: 6rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: hsl(0deg, 0%, 100%);
+}
+@media only screen and (max-width: 1225px) {
+  header h1 {
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    margin-top: -2rem;
+  }
 }
 header .arrow-down {
   display: -webkit-box;
@@ -136,10 +172,29 @@ header .arrow-down {
   width: 30px;
   height: 107.48px;
 }
+@media only screen and (max-width: 1225px) {
+  header .arrow-down {
+    margin-top: 2.5rem;
+    height: 18rem;
+    width: 5rem;
+  }
+}
 
 .presentation .presentation__section-one, .presentation .presentation__section-three, .presentation .presentation__section-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-one, .presentation .presentation__section-three, .presentation .presentation__section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    max-width: 1225px;
+  }
 }
 .presentation .presentation__section-one .presentation__section-one--text, .presentation .presentation__section-three .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-two--text {
   padding: 17rem;
@@ -156,11 +211,32 @@ header .arrow-down {
           align-items: baseline;
   gap: 3.2rem;
 }
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-one .presentation__section-one--text, .presentation .presentation__section-three .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-one--text, .presentation .presentation__section-two .presentation__section-two--text {
+    height: 44rem;
+    padding: 8rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .presentation .presentation__section-one .presentation__section-one--text .presentation__title, .presentation .presentation__section-three .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-two--text .presentation__title {
   font-family: "Fraunces";
   font-weight: 900;
   font-size: 5rem;
   letter-spacing: -0.285714px;
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-one .presentation__section-one--text .presentation__title, .presentation .presentation__section-three .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-one--text .presentation__title, .presentation .presentation__section-two .presentation__section-two--text .presentation__title {
+    font-size: 3.2rem;
+    text-align: center;
+  }
 }
 .presentation .presentation__section-one .presentation__section-one--text .presentation__text, .presentation .presentation__section-three .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-two--text .presentation__text {
   font-family: "Barlow";
@@ -168,6 +244,12 @@ header .arrow-down {
   font-weight: 600;
   line-height: 3rem;
   color: #808397;
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-one .presentation__section-one--text .presentation__text, .presentation .presentation__section-three .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-one--text .presentation__text, .presentation .presentation__section-two .presentation__section-two--text .presentation__text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 .presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red {
   color: black;
@@ -180,6 +262,11 @@ header .arrow-down {
   position: relative;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red {
+    font-size: 1.8rem;
+  }
 }
 .presentation .presentation__section-one .presentation__section-one--text .presentation__link--yellow span, .presentation .presentation__section-three .presentation__section-one--text .presentation__link--yellow span, .presentation .presentation__section-two .presentation__section-one--text .presentation__link--yellow span, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--yellow span, .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red span {
   position: relative;
@@ -205,6 +292,23 @@ header .arrow-down {
   height: 60rem;
   background: url(../../images/photos/image-transform.jpg) center/cover;
 }
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-one .presentation__section-one--image, .presentation .presentation__section-three .presentation__section-one--image, .presentation .presentation__section-two .presentation__section-one--image {
+    height: 31rem;
+  }
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1225px;
+  }
+}
 .presentation .presentation__section-two .presentation__section-two--text .presentation__link--red span {
   position: relative;
 }
@@ -229,6 +333,23 @@ header .arrow-down {
   height: 60rem;
   background: url(../../images/photos/image-stand-out.jpg) center/cover;
 }
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-two .presentation__section-two--image {
+    height: 31rem;
+  }
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1225px;
+  }
+}
 .presentation .presentation__section-three .presentation__section-three--cherry {
   height: 60rem;
   background: url(../../images/photos/image-graphic-design.jpg) center/cover;
@@ -252,6 +373,11 @@ header .arrow-down {
   font-size: 4rem;
   color: hsl(212deg, 27%, 19%);
 }
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-three .presentation__section-three--cherry .presentation__section-three--cherry--title {
+    font-size: 2.8rem;
+  }
+}
 .presentation .presentation__section-three .presentation__section-three--cherry .presentation__section-three--cherry--text {
   font-family: "Barlow";
   font-size: 1.5rem;
@@ -260,6 +386,11 @@ header .arrow-down {
   width: 35rem;
   line-height: 2.5rem;
   color: hsl(212deg, 27%, 19%);
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-three .presentation__section-three--cherry .presentation__section-three--cherry--text {
+    font-size: 1.6rem;
+  }
 }
 .presentation .presentation__section-three .presentation__section-three--orange {
   height: 60rem;
@@ -284,6 +415,11 @@ header .arrow-down {
   font-size: 4rem;
   color: hsl(212deg, 27%, 19%);
 }
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-three .presentation__section-three--orange .presentation__section-three--orange--title {
+    font-size: 2.8rem;
+  }
+}
 .presentation .presentation__section-three .presentation__section-three--orange .presentation__section-three--orange--text {
   font-family: "Barlow";
   font-size: 1.5rem;
@@ -292,6 +428,11 @@ header .arrow-down {
   width: 35rem;
   line-height: 2.5rem;
   color: hsl(212deg, 27%, 19%);
+}
+@media only screen and (max-width: 1225px) {
+  .presentation .presentation__section-three .presentation__section-three--orange .presentation__section-three--orange--text {
+    font-size: 1.6rem;
+  }
 }
 
 .testimonials {
@@ -311,6 +452,12 @@ header .arrow-down {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 1225px) {
+  .testimonials {
+    height: 140rem;
+    gap: 0rem;
+  }
+}
 .testimonials__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +472,12 @@ header .arrow-down {
   letter-spacing: 0.5rem;
   font-size: 2rem;
   color: hsl(232deg, 10%, 55%);
+}
+@media only screen and (max-width: 1225px) {
+  .testimonials__title {
+    font-size: 1.6rem;
+    margin-bottom: 6.8rem;
+  }
 }
 .testimonials__list {
   display: -webkit-box;
@@ -341,6 +494,22 @@ header .arrow-down {
       -ms-flex-align: center;
           align-items: center;
   gap: 10rem;
+}
+@media only screen and (max-width: 1225px) {
+  .testimonials__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1225px;
+    gap: 6rem;
+  }
 }
 .testimonials__list--peoples {
   display: -webkit-box;
@@ -360,6 +529,11 @@ header .arrow-down {
   width: 34rem;
   height: 35rem;
 }
+@media only screen and (max-width: 1225px) {
+  .testimonials__list--peoples {
+    margin-bottom: 0rem;
+  }
+}
 .testimonials__list--peoples--picture {
   width: 7.2rem;
   height: 7.2rem;
@@ -377,6 +551,13 @@ header .arrow-down {
       align-self: flex-end;
   margin-bottom: 6rem;
 }
+@media only screen and (max-width: 1225px) {
+  .testimonials__list--peoples--view {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 3.2rem;
+  }
+}
 .testimonials__list--peoples--name {
   font-family: "Fraunces";
   font-size: 1.8rem;
@@ -388,11 +569,26 @@ header .arrow-down {
   font-size: 1.4rem;
   color: hsl(232deg, 10%, 55%);
 }
+@media only screen and (max-width: 1225px) {
+  .testimonials__list--peoples--job {
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 0rem;
+  }
+}
 
 .gallery {
   height: 45rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media only screen and (max-width: 1225px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1225px;
+  }
 }
 .gallery__image-milk {
   background: url(../../images/photos/image-gallery-milkbottles.jpg) center/cover;

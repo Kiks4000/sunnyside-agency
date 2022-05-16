@@ -12,13 +12,29 @@ header {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
+		.hamburger-menu {
+			display: none;
+			@media only screen and (max-width: 1225px) {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin: -2rem;
+				height: 2.4rem;
+			}
+		}
 		.logo {
+			@media only screen and (max-width: 1225px) {
+				margin: -2rem;
+			}
 			height: 3rem;
 			width: 15rem;
 			align-self: flex-start;
 		}
 		.navigation {
+			@media only screen and (max-width: 1225px) {
+				display: none;
+			}
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
@@ -55,7 +71,13 @@ header {
 		}
 	}
 	h1 {
-		font-family: "Fraunces" Soft;
+		@media only screen and (max-width: 1225px) {
+			font-size: 4rem;
+			text-align: center;
+			letter-spacing: 1rem;
+			margin-top: -2rem;
+		}
+		font-family: "Fraunces", serif;
 		font-size: 6rem;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -63,6 +85,11 @@ header {
 		color: $White;
 	}
 	.arrow-down {
+		@media only screen and (max-width: 1225px) {
+			margin-top: 2.5rem;
+			height: 18rem;
+			width: 5rem;
+		}
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
