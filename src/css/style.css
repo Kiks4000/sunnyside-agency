@@ -179,6 +179,75 @@ header .arrow-down {
     width: 5rem;
   }
 }
+header .menu-mobile {
+  display: none;
+}
+@media only screen and (max-width: 400px) {
+  header .menu-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu-mobile .polygon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3.2rem;
+    position: absolute;
+    width: 33rem;
+    height: 55rem;
+    -webkit-clip-path: polygon(88% 16%, 100% 0, 100% 75%, 100% 76%, 0 76%, 0 14%, 100% 14%);
+            clip-path: polygon(88% 16%, 100% 0, 100% 75%, 100% 76%, 0 76%, 0 14%, 100% 14%);
+    background-color: hsl(0deg, 0%, 100%);
+    z-index: 0;
+    margin-top: 25rem;
+  }
+  header .menu-mobile .polygon__hamburger-menu {
+    font-family: "Barlow";
+    font-size: 2rem;
+    z-index: 1;
+  }
+  header .menu-mobile .polygon__hamburger-menu .mobile-about:link,
+header .menu-mobile .polygon__hamburger-menu .mobile-about:visited,
+header .menu-mobile .polygon__hamburger-menu .mobile-services:link,
+header .menu-mobile .polygon__hamburger-menu .mobile-services:visited,
+header .menu-mobile .polygon__hamburger-menu .mobile-projects:link,
+header .menu-mobile .polygon__hamburger-menu .mobile-projects:visited {
+    color: hsl(210deg, 4%, 67%);
+  }
+  header .menu-mobile .polygon__hamburger-btn {
+    text-align: center;
+    color: hsl(212deg, 27%, 19%);
+    font-family: "Fraunces";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+    border-radius: 8rem;
+    background-color: hsl(51deg, 100%, 49%);
+    z-index: 1;
+    margin-bottom: 5rem;
+  }
+  header .menu-mobile .polygon__hamburger-btn .mobile-contact:link,
+header .menu-mobile .polygon__hamburger-btn .mobile-contact:visited {
+    color: black;
+  }
+}
 
 .presentation .presentation__section-one, .presentation .presentation__section-three, .presentation .presentation__section-two {
   display: grid;
