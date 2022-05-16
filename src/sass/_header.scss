@@ -71,6 +71,7 @@ header {
 		}
 	}
 	h1 {
+<<<<<<< HEAD
 		@media only screen and (max-width: 1225px) {
 			font-size: 4rem;
 			text-align: center;
@@ -78,8 +79,11 @@ header {
 			margin-top: -2rem;
 		}
 		font-family: "Fraunces", serif;
+=======
+		font-family: "Fraunces";
+>>>>>>> 25c975785ea467eece2e1173ea9a4ed9e1e2547a
 		font-size: 6rem;
-		font-weight: 700;
+		font-weight: 900;
 		text-transform: uppercase;
 		letter-spacing: 0.5rem;
 		color: $White;
